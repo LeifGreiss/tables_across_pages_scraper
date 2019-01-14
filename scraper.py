@@ -2,7 +2,7 @@ import scraperwiki
 import urlparse 
 import lxml.html
 #scrape_tablefunction:getspassedanindividualpagetoscrape
-defscrape_table(root):
+def scrape_table(root):
 rows = root.cssselect("table.data tr") # selects all <tr> blocks within <table class=\
 "data">
 for row in rows:
